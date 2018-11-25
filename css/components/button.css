@@ -1,0 +1,14 @@
+.btn {
+  font-size: 1.6rem;
+  color: purple;
+  height: 3rem;
+  width: 13rem;
+  background-color: transparent;
+  border: purple solid 1px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  border: orange solid 1px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "project for epam",
+  "main": "./scripts/script.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --open",
+    "build": "webpack"
+  },
+  "author": "Maksim Yakush",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-loader": "^8.0.0",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

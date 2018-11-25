@@ -1,0 +1,129 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+  align-items: center;
+}
+
+.form .input-search {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  font-size: 4rem;
+  color: purple;
+  border: purple solid 1px;
+  padding: 1rem;
+}
+
+.form .input-search::placeholder {
+  color: purple;
+}
+
+.form .input-search:focus {
+  outline: none;
+  border: yellow solid 1px;
+}
+
+.clips {
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(20rem, 35rem);
+  padding: 0 5rem;
+
+  grid-template-rows: minmax(min-content, 40vh);
+  grid-gap: 5rem;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(128, 0, 128, 0.1);
+  box-shadow: inset 0px 0px 9px rgba(154, 147, 140, 0.5);
+}
+
+.clips .start-text {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clips .features {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  margin-top: 5rem;
+  grid-gap: 2rem;
+  align-content: center;
+}
+
+.clips .features > * {
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  color: rgba(118, 0, 118, 0.7);
+  padding: 4px 8px;
+  display: grid;
+  align-content: center;
+}
+
+.clips .search-something-text {
+  animation: moveInRight 1s 1s ease backwards;
+}
+
+.clips .navigate-by-swiping-text {
+  animation: moveInRight 1s 3s ease backwards;
+}
+
+.clips .use-buttons-text {
+  animation: moveInRight 1s 5s ease backwards;
+}
+
+.controllers {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: orange dotted 2px;
+}
+
+.clip.to-left-out {
+  transform: translateX(-100vw);
+  transition: all .3s;
+}
+
+.clip.to-right-out {
+  transform: translateX(100vw);
+  transition: all .3s;
+}
